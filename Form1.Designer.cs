@@ -31,10 +31,10 @@ namespace Remis_Ya
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtChofer = new System.Windows.Forms.TextBox();
+            this.cmdBuscar = new System.Windows.Forms.Button();
+            this.cmdModificar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,51 +55,55 @@ namespace Remis_Ya
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 82);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(366, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtNombre.Location = new System.Drawing.Point(12, 82);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(366, 20);
+            this.txtNombre.TabIndex = 2;
             // 
-            // textBox2
+            // txtChofer
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 27);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtChofer.Location = new System.Drawing.Point(12, 27);
+            this.txtChofer.Name = "txtChofer";
+            this.txtChofer.Size = new System.Drawing.Size(100, 20);
+            this.txtChofer.TabIndex = 3;
             // 
-            // button1
+            // cmdBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(222, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Location = new System.Drawing.Point(222, 125);
+            this.cmdBuscar.Name = "cmdBuscar";
+            this.cmdBuscar.Size = new System.Drawing.Size(75, 23);
+            this.cmdBuscar.TabIndex = 4;
+            this.cmdBuscar.Text = "Buscar";
+            this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
             // 
-            // button2
+            // cmdModificar
             // 
-            this.button2.Location = new System.Drawing.Point(303, 125);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Modificar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.cmdModificar.Location = new System.Drawing.Point(303, 125);
+            this.cmdModificar.Name = "cmdModificar";
+            this.cmdModificar.Size = new System.Drawing.Size(75, 23);
+            this.cmdModificar.TabIndex = 5;
+            this.cmdModificar.Text = "Modificar";
+            this.cmdModificar.UseVisualStyleBackColor = true;
+            this.cmdModificar.Click += new System.EventHandler(this.cmdModificar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(396, 189);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmdModificar);
+            this.Controls.Add(this.cmdBuscar);
+            this.Controls.Add(this.txtChofer);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,10 +113,10 @@ namespace Remis_Ya
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtChofer;
+        private System.Windows.Forms.Button cmdBuscar;
+        private System.Windows.Forms.Button cmdModificar;
     }
 }
 

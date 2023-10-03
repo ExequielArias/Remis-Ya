@@ -76,5 +76,10 @@ namespace Remis_Ya
             Form10 f10 = new Form10();
             f10.ShowDialog();
         }
+
+        private void MENU_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
