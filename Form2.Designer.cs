@@ -30,12 +30,12 @@ namespace Remis_Ya
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtParteDeChofer = new System.Windows.Forms.TextBox();
+            this.cmdBuscar = new System.Windows.Forms.Button();
+            this.dgvChoferesForm2 = new System.Windows.Forms.DataGridView();
             this.Chofer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChoferesForm2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,35 +47,36 @@ namespace Remis_Ya
             this.label1.TabIndex = 0;
             this.label1.Text = "Parte del nombre del chofer";
             // 
-            // textBox1
+            // txtParteDeChofer
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(492, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtParteDeChofer.Location = new System.Drawing.Point(15, 47);
+            this.txtParteDeChofer.Name = "txtParteDeChofer";
+            this.txtParteDeChofer.Size = new System.Drawing.Size(492, 20);
+            this.txtParteDeChofer.TabIndex = 1;
             // 
-            // button1
+            // cmdBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(225, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Location = new System.Drawing.Point(225, 73);
+            this.cmdBuscar.Name = "cmdBuscar";
+            this.cmdBuscar.Size = new System.Drawing.Size(75, 23);
+            this.cmdBuscar.TabIndex = 2;
+            this.cmdBuscar.Text = "Buscar";
+            this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
             // 
-            // dataGridView1
+            // dgvChoferesForm2
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvChoferesForm2.AllowUserToAddRows = false;
+            this.dgvChoferesForm2.AllowUserToDeleteRows = false;
+            this.dgvChoferesForm2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvChoferesForm2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Chofer,
             this.Nombre});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 119);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(492, 285);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvChoferesForm2.Location = new System.Drawing.Point(15, 119);
+            this.dgvChoferesForm2.Name = "dgvChoferesForm2";
+            this.dgvChoferesForm2.ReadOnly = true;
+            this.dgvChoferesForm2.Size = new System.Drawing.Size(492, 285);
+            this.dgvChoferesForm2.TabIndex = 3;
             // 
             // Chofer
             // 
@@ -95,13 +96,13 @@ namespace Remis_Ya
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 418);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dgvChoferesForm2);
+            this.Controls.Add(this.cmdBuscar);
+            this.Controls.Add(this.txtParteDeChofer);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChoferesForm2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,9 +111,9 @@ namespace Remis_Ya
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtParteDeChofer;
+        private System.Windows.Forms.Button cmdBuscar;
+        private System.Windows.Forms.DataGridView dgvChoferesForm2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Chofer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
     }

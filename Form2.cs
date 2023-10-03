@@ -16,5 +16,19 @@ namespace Remis_Ya
         {
             InitializeComponent();
         }
+
+        private void cmdBuscar_Click(object sender, EventArgs e)
+        {
+            Choferes oChofer = new Choferes();
+            DataRow fila = oChofer.buscar(Convert.ToInt32(txtParteDeChofer.Text));
+            if (txtParteDeChofer == null)
+            {
+                MessageBox.Show("No se encontro el chofer", "Error");
+            }
+            else
+            {
+                
+            }
+        }
     }
 }
