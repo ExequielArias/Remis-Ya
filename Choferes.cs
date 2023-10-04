@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace Remis_Ya
         DataTable tabla;
         private string nombre;
         private int chofer;
+        DataTable TablaNueva; 
 
         public string Nombre
         {
@@ -62,6 +64,29 @@ namespace Remis_Ya
             fila["chofer"] = chofer; 
             OleDbCommandBuilder cb = new OleDbCommandBuilder(adaptador); //traducir el lenguaje c# en lenguaje SQL
             adaptador.Update(tabla); //Sube todos los registros de la memoria al acces
+        }
+        public DataTable llenarGrilla(string filtro) 
+        {
+            try
+            {
+                TablaNueva = new DataTable();
+                TablaNueva.Columns.Add("chofer");
+                TablaNueva.Columns.Add("nombre");
+                foreach (DataRow fila in tabla.Rows)
+                {
+                    string dato = fila["nombre"].ToString().ToUpper();
+                    int filaComparacion = dato.IndexOf(filtro.ToUpper());
+                    if (filaComparacion != -1)
+                    {
+                        TablaNueva.Rows.Add(fila["chofer"], fila["nombre"]);
+                    }
+                }
+            } 
+            catch 
+            {
+                MessageBox.Show("error");
+            }
+            return TablaNueva;
         }
     }
 }
