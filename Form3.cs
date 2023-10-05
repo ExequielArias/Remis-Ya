@@ -23,6 +23,18 @@ namespace Remis_Ya
             viaje viaje = new viaje();
             DataTable tablaChoferes = chofer.getData();
             DataTable tablaViajes = viaje.getData();
+            foreach (DataRow filaChofer in tablaChoferes.Rows)
+            {
+                decimal total = 0;
+                foreach (DataRow filaViaje in tablaViajes.Rows)
+                {
+                    if (filaChofer["chofer"].ToString() == filaViaje["chofer"].ToString())
+                    {
+                        total += Convert.ToDecimal(filaViaje["importe"]);
+                    }
+                }
+                dgvForm3.Rows.Add(filaChofer["nombre"], total);
+            }
         }
     }
 }

@@ -29,25 +29,25 @@ namespace Remis_Ya
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvForm3 = new System.Windows.Forms.DataGridView();
             this.c1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.C2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvForm3)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvForm3
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvForm3.AllowUserToAddRows = false;
+            this.dgvForm3.AllowUserToDeleteRows = false;
+            this.dgvForm3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvForm3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.c1,
             this.C2});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(644, 324);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvForm3.Location = new System.Drawing.Point(12, 12);
+            this.dgvForm3.Name = "dgvForm3";
+            this.dgvForm3.ReadOnly = true;
+            this.dgvForm3.Size = new System.Drawing.Size(644, 324);
+            this.dgvForm3.TabIndex = 0;
             // 
             // c1
             // 
@@ -68,18 +68,18 @@ namespace Remis_Ya
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 355);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvForm3);
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvForm3)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvForm3;
         private System.Windows.Forms.DataGridViewTextBoxColumn c1;
         private System.Windows.Forms.DataGridViewTextBoxColumn C2;
     }
