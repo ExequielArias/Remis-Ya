@@ -30,10 +30,10 @@ namespace Remis_Ya
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.lstNombres = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdVer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,21 +45,21 @@ namespace Remis_Ya
             this.label1.TabIndex = 0;
             this.label1.Text = "FECHA";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(60, 16);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(103, 20);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(60, 16);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(103, 20);
+            this.dtpFecha.TabIndex = 1;
             // 
-            // listBox1
+            // lstNombres
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 86);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(151, 355);
-            this.listBox1.TabIndex = 2;
+            this.lstNombres.FormattingEnabled = true;
+            this.lstNombres.Location = new System.Drawing.Point(12, 86);
+            this.lstNombres.Name = "lstNombres";
+            this.lstNombres.Size = new System.Drawing.Size(250, 355);
+            this.lstNombres.TabIndex = 2;
             // 
             // label2
             // 
@@ -70,24 +70,25 @@ namespace Remis_Ya
             this.label2.TabIndex = 3;
             this.label2.Text = "NOMBRES DE CHOFERES";
             // 
-            // button1
+            // cmdVer
             // 
-            this.button1.Location = new System.Drawing.Point(187, 49);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "VER";
-            this.button1.UseVisualStyleBackColor = true;
+            this.cmdVer.Location = new System.Drawing.Point(187, 17);
+            this.cmdVer.Name = "cmdVer";
+            this.cmdVer.Size = new System.Drawing.Size(75, 23);
+            this.cmdVer.TabIndex = 4;
+            this.cmdVer.Text = "VER";
+            this.cmdVer.UseVisualStyleBackColor = true;
+            this.cmdVer.Click += new System.EventHandler(this.cmdVer_Click);
             // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 455);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdVer);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lstNombres);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.label1);
             this.Name = "Form10";
             this.Text = "Form10";
@@ -99,9 +100,9 @@ namespace Remis_Ya
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.ListBox lstNombres;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdVer;
     }
 }

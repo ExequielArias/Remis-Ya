@@ -29,7 +29,7 @@ namespace Remis_Ya
             Viajes viaje = new Viajes();
             viaje.listadoFechas(cboFecha);
             tablaViajes = viaje.getData();
-            dgvFrm9.Rows.Add(cboFecha);   
+            dgvFrm9.Rows.Add();   
         }
         public decimal[,] crearMatriz()
         {
