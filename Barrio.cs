@@ -34,6 +34,11 @@ namespace Remis_Ya
             vec[0] = tabla.Columns["Barrio"];
             tabla.PrimaryKey = vec;
         }
+        public DataTable getData()
+        {
+            return tabla;
+        }
+
         public bool grabar(int barrio, string nombre) 
         {
             bool ok = true;
