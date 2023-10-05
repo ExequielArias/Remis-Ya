@@ -20,7 +20,7 @@ namespace Remis_Ya
         private void Form3_Load(object sender, EventArgs e)
         {
             Choferes chofer = new Choferes();
-            viaje viaje = new viaje();
+            Viajes viaje = new Viajes();
             DataTable tablaChoferes = chofer.getData();
             DataTable tablaViajes = viaje.getData();
             foreach (DataRow filaChofer in tablaChoferes.Rows)
