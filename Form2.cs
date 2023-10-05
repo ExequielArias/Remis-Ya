@@ -19,10 +19,44 @@ namespace Remis_Ya
 
         private void cmdBuscar_Click(object sender, EventArgs e)
         {
-            string filtro = txtParteDeChofer.Text;  
-            Choferes oChofer = new Choferes();
-            DataTable tablaFiltrada = oChofer.llenarGrilla(filtro);
-            dgvChoferesForm2.Rows.Add(tablaFiltrada.Rows); 
+            try 
+            {
+                if (txtParteDeChofer.Text == "")
+                {
+                    MessageBox.Show("VERIFIQUE LOS DATOS INGRESADOS", "ERROR"); 
+                }
+                else
+                {
+                    Choferes choferes = new Choferes();
+                    DataTable tablachoferes = choferes.getData();
+                    if (choferes.Nombre != "")
+                    {
+                        string parte = txtParteDeChofer.Text.ToUpper();
+                        dgvChoferesForm2.Rows.Clear();
+                        foreach (DataRow filachofer in tablachoferes.Rows)
+                        {
+                            string nombre = filachofer["nombre"].ToString().ToUpper();
+
+                            if (nombre.Contains(parte.ToString()))
+                            {
+                                dgvChoferesForm2.Rows.Add(filachofer["chofer"], filachofer["nombre"]);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("NO HAY DATOS CARGADOS EN LA BASE DE DATOS", "ERROR");
+                    }
+                }
+            } 
+            catch (Exception ex) 
+            {
+                MessageBox.Show("ERROR");
+            }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
 
         }
     }

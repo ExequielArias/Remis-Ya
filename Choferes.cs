@@ -52,6 +52,10 @@ namespace Remis_Ya
             vec[0] = tabla.Columns["chofer"];
             tabla.PrimaryKey = vec;
         }
+        public DataTable getData() 
+        {
+            return tabla;
+        }
         public DataRow buscar(int chofer)
         {
             DataRow fila = tabla.Rows.Find(chofer);
