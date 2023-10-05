@@ -35,7 +35,6 @@ namespace Remis_Ya
             dgvInfo.Rows.Clear();
             Viajes viaje = new Viajes();
             tablaViajes = viaje.getData();
-
             Barrio barrio = new Barrio();
             tablaBarrios = barrio.getData();
             foreach (DataRow filaViaje in tablaViajes.Rows)
