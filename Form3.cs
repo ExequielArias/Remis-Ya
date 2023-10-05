@@ -16,5 +16,13 @@ namespace Remis_Ya
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+            Choferes chofer = new Choferes();
+            viaje viaje = new viaje();
+            DataTable tablaChoferes = chofer.getData();
+            DataTable tablaViajes = viaje.getData();
+        }
     }
 }
