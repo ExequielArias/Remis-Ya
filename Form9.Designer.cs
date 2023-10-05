@@ -30,11 +30,11 @@ namespace Remis_Ya
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cboFecha = new System.Windows.Forms.ComboBox();
+            this.dgvFrm9 = new System.Windows.Forms.DataGridView();
             this.C1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.C2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFrm9)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -42,31 +42,31 @@ namespace Remis_Ya
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 13);
+            this.label1.Size = new System.Drawing.Size(101, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "FECHA DEL VIAJE SIN REPETIR";
+            this.label1.Text = "FECHA DEL VIAJE \r\n";
             // 
-            // comboBox1
+            // cboFecha
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(166, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cboFecha.FormattingEnabled = true;
+            this.cboFecha.Location = new System.Drawing.Point(15, 36);
+            this.cboFecha.Name = "cboFecha";
+            this.cboFecha.Size = new System.Drawing.Size(399, 21);
+            this.cboFecha.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvFrm9
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvFrm9.AllowUserToAddRows = false;
+            this.dgvFrm9.AllowUserToDeleteRows = false;
+            this.dgvFrm9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFrm9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.C1,
             this.C2});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 87);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(399, 351);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvFrm9.Location = new System.Drawing.Point(15, 87);
+            this.dgvFrm9.Name = "dgvFrm9";
+            this.dgvFrm9.ReadOnly = true;
+            this.dgvFrm9.Size = new System.Drawing.Size(399, 351);
+            this.dgvFrm9.TabIndex = 2;
             // 
             // C1
             // 
@@ -85,12 +85,13 @@ namespace Remis_Ya
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(436, 450);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dgvFrm9);
+            this.Controls.Add(this.cboFecha);
             this.Controls.Add(this.label1);
             this.Name = "Form9";
             this.Text = "Form9";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Form9_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFrm9)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,8 +100,8 @@ namespace Remis_Ya
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cboFecha;
+        private System.Windows.Forms.DataGridView dgvFrm9;
         private System.Windows.Forms.DataGridViewTextBoxColumn C1;
         private System.Windows.Forms.DataGridViewTextBoxColumn C2;
     }
