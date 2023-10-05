@@ -48,7 +48,7 @@ namespace Remis_Ya
             }
             else MessageBox.Show($"No existe un viaje con el número {id}", "AVISO", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-        public void eliminarDatosConSQL(int id)
+        public void eliminarDatoConSQL(int id)
         {
             try
             {
