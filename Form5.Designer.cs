@@ -113,7 +113,9 @@ namespace Remis_Ya
             this.Controls.Add(this.dgvInfo);
             this.Controls.Add(this.lstNombresDeChoferes);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form5";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInfo)).EndInit();

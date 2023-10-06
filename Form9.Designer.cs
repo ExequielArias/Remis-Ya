@@ -51,7 +51,7 @@ namespace Remis_Ya
             this.cboFecha.FormattingEnabled = true;
             this.cboFecha.Location = new System.Drawing.Point(15, 36);
             this.cboFecha.Name = "cboFecha";
-            this.cboFecha.Size = new System.Drawing.Size(399, 21);
+            this.cboFecha.Size = new System.Drawing.Size(444, 21);
             this.cboFecha.TabIndex = 1;
             this.cboFecha.SelectedIndexChanged += new System.EventHandler(this.cboFecha_SelectedIndexChanged);
             // 
@@ -66,7 +66,7 @@ namespace Remis_Ya
             this.dgvFrm9.Location = new System.Drawing.Point(15, 87);
             this.dgvFrm9.Name = "dgvFrm9";
             this.dgvFrm9.ReadOnly = true;
-            this.dgvFrm9.Size = new System.Drawing.Size(399, 351);
+            this.dgvFrm9.Size = new System.Drawing.Size(444, 351);
             this.dgvFrm9.TabIndex = 2;
             // 
             // C1
@@ -74,22 +74,26 @@ namespace Remis_Ya
             this.C1.HeaderText = "NOMBRE DEL CHOFER";
             this.C1.Name = "C1";
             this.C1.ReadOnly = true;
+            this.C1.Width = 200;
             // 
             // C2
             // 
             this.C2.HeaderText = "IMPORTE TOTAL";
             this.C2.Name = "C2";
             this.C2.ReadOnly = true;
+            this.C2.Width = 200;
             // 
             // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(436, 450);
+            this.ClientSize = new System.Drawing.Size(478, 450);
             this.Controls.Add(this.dgvFrm9);
             this.Controls.Add(this.cboFecha);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form9";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";
             this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFrm9)).EndInit();

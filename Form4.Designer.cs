@@ -138,7 +138,9 @@ namespace Remis_Ya
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dtpFechaDesde);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
             ((System.ComponentModel.ISupportInitialize)(this.dgvForm4)).EndInit();
             this.ResumeLayout(false);

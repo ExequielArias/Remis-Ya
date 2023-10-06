@@ -148,6 +148,7 @@ namespace Remis_Ya
             this.ClientSize = new System.Drawing.Size(228, 224);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "MENU";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MENU";

@@ -146,7 +146,9 @@ namespace Remis_Ya
             this.Controls.Add(this.cmdBuscar);
             this.Controls.Add(this.txtViaje);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form7";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.Form7_Load);
             this.ResumeLayout(false);

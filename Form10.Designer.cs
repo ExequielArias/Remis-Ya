@@ -102,7 +102,9 @@ namespace Remis_Ya
             this.Controls.Add(this.lstNombres);
             this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form10";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form10";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -120,7 +120,9 @@ namespace Remis_Ya
             this.Controls.Add(this.dgvFrm6);
             this.Controls.Add(this.cmdConsultar);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.groupBox1.ResumeLayout(false);

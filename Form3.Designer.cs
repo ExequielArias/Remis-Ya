@@ -69,7 +69,9 @@ namespace Remis_Ya
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 355);
             this.Controls.Add(this.dgvForm3);
+            this.MaximizeBox = false;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvForm3)).EndInit();

@@ -103,7 +103,9 @@ namespace Remis_Ya
             this.Controls.Add(this.cmdBuscar);
             this.Controls.Add(this.txtParteDeChofer);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChoferesForm2)).EndInit();
