@@ -34,6 +34,7 @@ namespace Remis_Ya
             this.lstNombres = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmdVer = new System.Windows.Forms.Button();
+            this.cmdBorrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,11 +81,22 @@ namespace Remis_Ya
             this.cmdVer.UseVisualStyleBackColor = true;
             this.cmdVer.Click += new System.EventHandler(this.cmdVer_Click);
             // 
+            // cmdBorrar
+            // 
+            this.cmdBorrar.Location = new System.Drawing.Point(187, 46);
+            this.cmdBorrar.Name = "cmdBorrar";
+            this.cmdBorrar.Size = new System.Drawing.Size(75, 23);
+            this.cmdBorrar.TabIndex = 5;
+            this.cmdBorrar.Text = "BORRAR";
+            this.cmdBorrar.UseVisualStyleBackColor = true;
+            this.cmdBorrar.Click += new System.EventHandler(this.cmdBorrar_Click);
+            // 
             // Form10
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(274, 455);
+            this.Controls.Add(this.cmdBorrar);
             this.Controls.Add(this.cmdVer);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lstNombres);
@@ -104,5 +116,6 @@ namespace Remis_Ya
         private System.Windows.Forms.ListBox lstNombres;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cmdVer;
+        private System.Windows.Forms.Button cmdBorrar;
     }
 }

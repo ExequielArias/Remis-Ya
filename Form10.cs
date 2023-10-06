@@ -80,5 +80,10 @@ namespace Remis_Ya
                 matrizChoferes[i, 1] = 0;
             }
         }
+
+        private void cmdBorrar_Click(object sender, EventArgs e)
+        {
+            lstNombres.Items.Clear();
+        }
     }
 }

@@ -48,7 +48,7 @@ namespace Remis_Ya
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 76);
+            this.label2.Location = new System.Drawing.Point(9, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 1;
@@ -56,21 +56,21 @@ namespace Remis_Ya
             // 
             // txtBarrio
             // 
-            this.txtBarrio.Location = new System.Drawing.Point(12, 46);
+            this.txtBarrio.Location = new System.Drawing.Point(12, 35);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(100, 20);
             this.txtBarrio.TabIndex = 2;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(12, 108);
+            this.txtNombre.Location = new System.Drawing.Point(12, 83);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(322, 20);
             this.txtNombre.TabIndex = 3;
             // 
             // cmdGrabar
             // 
-            this.cmdGrabar.Location = new System.Drawing.Point(259, 148);
+            this.cmdGrabar.Location = new System.Drawing.Point(259, 109);
             this.cmdGrabar.Name = "cmdGrabar";
             this.cmdGrabar.Size = new System.Drawing.Size(75, 23);
             this.cmdGrabar.TabIndex = 4;
@@ -82,7 +82,7 @@ namespace Remis_Ya
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 186);
+            this.ClientSize = new System.Drawing.Size(353, 146);
             this.Controls.Add(this.cmdGrabar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtBarrio);
