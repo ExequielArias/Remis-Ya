@@ -85,5 +85,17 @@ namespace Remis_Ya
                 dgvFrm9.Rows.Add(filaChofer["nombre"], matrizChoferes[i, 1]);
             }
         }
+
+        private void cboFecha_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            matrizChoferes = crearMatriz();
+            importesPorChofer();
+            dgvFrm9.Rows.Clear();
+            for (int i = 0; i < matrizChoferes.GetLength(0); i++)
+            {
+                DataRow filaChofer = tablaChoferes.Rows.Find(matrizChoferes[i, 0]);
+                dgvFrm9.Rows.Add(filaChofer["nombre"], matrizChoferes[i, 1]);
+            }
+        }
     }
 }

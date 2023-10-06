@@ -53,6 +53,7 @@ namespace Remis_Ya
             this.cboFecha.Name = "cboFecha";
             this.cboFecha.Size = new System.Drawing.Size(399, 21);
             this.cboFecha.TabIndex = 1;
+            this.cboFecha.SelectedIndexChanged += new System.EventHandler(this.cboFecha_SelectedIndexChanged);
             // 
             // dgvFrm9
             // 
